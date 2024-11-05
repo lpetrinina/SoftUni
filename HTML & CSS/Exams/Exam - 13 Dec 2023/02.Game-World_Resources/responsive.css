@@ -1,0 +1,88 @@
+@media (max-width:600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .placeholder {
+        padding-top: 1em;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .tm-site-logo {
+        width: 80px;
+    }
+
+    .tm-site-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .tm-site-description {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0 1em;
+    }
+
+    .tm-section-title {
+        margin: 0;
+        max-width: 15ch;
+        padding-bottom: 2rem;
+    }
+
+    .tm-welcome-section {
+        margin-bottom: 1.5em;
+    }
+
+    .tm-gallery {
+        margin-left: 0;
+    }
+
+    .tm-gallery-page {
+        margin: 0 2em;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .tm-gallery-item {
+        max-width: 400px;
+    }
+
+    .tm-gallery-title {
+        text-align: center;
+    }
+
+    .tm-gallery-description {
+        text-align: center;
+    }
+
+    .tm-gallery-price {
+        margin-bottom: 0;
+    }
+
+    .tm-cta-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
+
+    .tm-description-figure {
+        max-width: 450px;
+        width: inherit;
+    }
+
+    .tm-gallery-title {
+        text-align: left;
+    }
+
+    .tm-footer {
+        margin-top: 20px;
+    }
+}

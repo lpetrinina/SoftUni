@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 20px/1.5 "Playwrite PE";
+}
+
+a,
+button {
+    font: 25px/1.5 "Roboto";
+}
+
+body,
+input,
+textarea {
+    font: inherit;
+}
+
+.section {
+    padding: 3em max(calc((100vw - 1700px)/2), 2em);
+}
+
+/* Navigation */
+
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.main-nav ul li {
+    display: block;
+    list-style: none outside;
+
+}
+
+.main-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #314584;
+    font-weight: bold;
+
+}
+
+.main-nav ul li.active-btn a {
+    color: #FF3956;
+}
+
+.contact-btn a {
+    display: block;
+    text-decoration: none;
+    color: #314584;
+    font-weight: bold;
+    background-color: #F0F0F0;
+    padding: 0.8em 2.5em;
+    border-radius: 0.5em;
+    border: 3px solid #FF3956;
+}
+
+/* Header image + content */
+
+.home-content {
+    padding: 5em 0;
+    position: relative;
+}
+
+.home-content .wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapper .text-container h1 {
+    font-size: 3.5em;
+    color: #314584;
+    padding-bottom: 0.5em;
+    line-height: 1.7;
+}
+
+.wrapper .text-container p {
+    opacity: 0.7;
+    line-height: 1.8;
+    max-width: 35ch;
+}
+
+.home-content .img-container {
+    display: block;
+    max-width: 960px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 31em;
+}
+
+.home-content .img-container img {
+    display: block;
+    width: 120%;
+    height: auto;
+}
+
+.home-content .buttons {
+    margin-top: 3em;
+}
+
+
+.home-content .buttons a {
+    text-decoration: none;
+    color: #314584;
+    padding: 1.1em 2em;
+    font-weight: bold;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border: none;
+    border-radius: 3em;
+    margin-right: 2em;
+    font-size: 1.1em;
+}
+
+.home-content .buttons .more-btn {
+    background-color: #FF3956;
+    color: #fff;
+}
+
+/* Main */
+
+.services {
+    position: relative;
+}
+
+.site-decoration {
+    display: block;
+    width: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.site-decoration img {
+    display: block;
+    width: 100%;
+}
+
+.site-decoration.img-1 {
+    top: 20em;
+    left: -6em;
+}
+
+
+.site-decoration.img-2 {
+    top: 54em;
+    left: 82em;
+}
+
+.section-design,
+.section-development {
+    margin: 0 0.2em 0.5em 0.5em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.services .media {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 340px;
+}
+
+.services .media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.services .text-content {
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.services .text-content h3 {
+    text-align: center;
+    font-size: 2.1em;
+    color: #314584;
+}
+
+.services .text-content p {
+    color: #314584;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.about-us .media {
+    max-width: 740px;
+    overflow: hidden;
+}
+
+.about-us .media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-us .our-company {
+    max-width: 55ch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+.our-company h5,
+.contact-us h5 {
+    color: #FF4948;
+}
+
+.our-company h2,
+.contact-us h2 {
+    color: #314584;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.our-company p {
+    color: #314584;
+}
+
+.contact-us {
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 2em;
+}
+
+.field input,
+.field textarea {
+    width: 90%;
+    background: #314584;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    margin-top: 1em;
+    padding: 0.7em 1em;
+    border-radius: 0.9em;
+
+}
+
+.field textarea {
+    padding-bottom: 5em;
+    margin-top: 2em;
+}
+
+.site-footer {
+    background-color: #314584;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-nav {
+    margin: 2em auto;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer-nav ul li {
+    list-style: none outside;
+}
+
+.footer-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+
+}

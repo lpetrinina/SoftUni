@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Margarine;
+}
+
+body,
+input,
+button,
+textarea,
+a {
+    font: inherit;
+}
+
+body {
+    padding: 6em 0;
+    background-color: #FFF0E4;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1370px;
+    display: flex;
+    gap: 1em;
+}
+
+.card {
+    box-shadow: 0 0.5em 2em 0 rgb(0, 0, 0, 0.4);
+}
+
+.card-personal-info {
+    flex: 1 1 440px;
+    padding: 1.2em;
+}
+
+
+i {
+    margin-right: 1em;
+    padding: 1em 0;
+    color: #2991E6;
+}
+
+.contact-info {
+    margin: 1em 0;
+}
+
+.contact-info::after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+.percentage {
+    display: block;
+    height: 1.5em;
+    background-color: #2991E6;
+    border-radius: 0.8em;
+    color: #fff;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.percentage:has(>.width-90) {
+    width: 90%;
+}
+
+.percentage:has(>.width-80) {
+    width: 80%;
+}
+
+.percentage:has(>.width-75) {
+    width: 75%;
+}
+
+.percentage:has(>.width-50) {
+    width: 50%;
+}
+
+.card-work-experience {
+    flex: 1 1 910px;
+    padding: 2em;
+}
+
+.card-work-experience h2 {
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.card-work-experience h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #66605B;
+    padding: 1em 0;
+}
+
+.card-work-experience h6 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #2991E6;
+}
+
+.card-work-experience p {
+    padding: 1em 0;
+}
+
+.work-place:not(:last-of-type)::after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
