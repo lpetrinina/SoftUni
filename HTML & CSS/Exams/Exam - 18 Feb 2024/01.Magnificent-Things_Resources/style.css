@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Inter;
+}
+
+body,
+input,
+button,
+a {
+    font: inherit;
+}
+
+body {
+    padding: 2em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1060px;
+    background-color: #85DCFF;
+    padding: 3em 2em;
+}
+
+.columns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+.main-content {
+    flex: 0 1 auto;
+}
+
+.main-content h1 {
+    font-size: 3em;
+    width: 15ch;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+}
+
+.main-content ul {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.main-content ul li {
+    display: block;
+    list-style: none outside;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #fff;
+}
+
+.main-content ul li.current {
+    border: 1px solid black;
+    background-color: #42AA59;
+}
+
+.main-content ul li.current:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.main-content ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1em 2em;
+    color: inherit;
+}
+
+
+.media img {
+    display: block;
+    width: 100%;
+}
+
+.media {
+    flex: 0 1 360px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    box-shadow: 0.7em 0.5em 1em 0 rgb(0, 0, 0.5, 0.8);
+
+}

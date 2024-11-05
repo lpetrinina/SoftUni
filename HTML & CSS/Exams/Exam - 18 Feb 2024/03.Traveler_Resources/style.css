@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 22px/1.5 Karla, serif;
+}
+
+body,
+a,
+textarea button {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Infant", sans-serif;
+}
+
+.section {
+    padding: 2em max(calc((100vw - 1300px) /2), 2em);
+}
+
+header .nav-container {
+    padding: 2em max(calc((100vw - 1700px) /2), 2em)
+}
+
+.image-container {
+    position: relative;
+    max-height: 870px;
+    background-image: url('images/poster.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container::before {
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.nav-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .logo {
+    position: relative;
+    z-index: 2;
+    width: 130px;
+    height: 75px;
+
+}
+
+.nav-container .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/logo.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -100vw;
+}
+
+.nav-container .main-nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.nav-container .main-nav ul li {
+    list-style: none outside;
+}
+
+
+.nav-container .main-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.site-title {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    padding-top: 15em;
+    padding-bottom: 10em;
+}
+
+.site-title h1 {
+    font-size: 4.09em;
+    font-weight: 900;
+    color: #fff;
+}
+
+.site-title p {
+    text-align: center;
+    max-width: 60ch;
+    color: #fff;
+}
+
+/* Main */
+
+.light-color {
+    background-color: #F8F0E9;
+}
+
+.pink-color {
+    background-color: #E14747;
+}
+
+.testimonial-container h2 {
+    font-size: 3.7em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.support-container {}
+
+.support-container .wrapper {
+    padding: 2em;
+    color: #fff;
+    text-align: center;
+
+}
+
+.support-container .wrapper h5 {
+    font-size: 1.36em;
+    margin-bottom: 1em;
+}
+
+
+.info-container .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    gap: 4em;
+}
+
+.info-container .wrapper article {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    max-width: 620px;
+}
+
+.info-container article .media {
+    max-width: 620px;
+}
+
+.info-container article .media img {
+    width: 100%;
+}
+
+.info-container article h3 {
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 1;
+}
+
+.info-container .wrapper .btn {
+    width: max-content;
+    padding: 0.5em 1em;
+    border: 2px solid black;
+    border-radius: 0.3em;
+    background-color: #fff;
+}
+
+.info-container .wrapper .btn a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.guide-container .wrapper {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    color: #fff;
+}
+
+.guide-container .wrapper h3 {
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 1;
+    padding: 1em;
+
+}
+
+.guide-container .wrapper p {
+    max-width: 80ch;
+    text-align: center;
+}
+
+.guide-container .wrapper .btn {
+    background-color: #FAD87A;
+    padding: 0.7em 1.2em;
+    border-radius: 2em;
+    margin: 1em 0;
+}
+
+.guide-container .wrapper .btn a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dark-color {
+    background-color: #352B2A;
+    padding: 3em 6em;
+}
+
+.dark-color .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dark-color .wrapper .footer-logo {
+    width: 95px;
+    height: 60px;
+
+}
+
+
+.dark-color .wrapper .footer-logo a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/logo.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -100vw;
+}
+
+.dark-color .wrapper p:first-of-type {
+    color: #fff;
+    margin-top: 1em;
+}
+
+.dark-color .wrapper p:nth-of-type(2) {
+    font-size: 0.9em;
+    color: #766968;
+}
