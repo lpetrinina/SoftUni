@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 25px/1.5 "Kode Mono", sans-serif;
+}
+
+body,
+input,
+button,
+label,
+textarea {
+    font: inherit;
+}
+
+body {
+    background-color: #C1BDBA;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 750px;
+    background-color: #24333C;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #fff;
+
+    text-align: center;
+}
+
+form .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn li {
+    flex: 1 1 auto;
+    list-style: none outside;
+}
+
+
+.btn li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.7em 0;
+    background-color: #435359;
+    color: #9AADAB;
+    text-align: center;
+}
+
+.btn li a.current {
+    background-color: #1AB188;
+    color: #fff;
+}
+
+.btn li:nth-last-child(1) a:hover {
+    background-color: #179A77;
+    color: #fff;
+}
+
+.field {
+    position: relative;
+}
+
+.field input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #A0B3B0;
+    padding: 0.2rem 0.5rem;
+
+}
+
+.field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #92999E;
+    padding: 0.2em 0.7em;
+    font-size: 1.08em;
+}
+
+.field input:required~label::after {
+    display: inline-block;
+    content: '*';
+    color: #1AB188;
+    padding-left: 0.2rem;
+}
+
+input[type="submit"] {
+    background-color: #1AB188;
+    border: none;
+    padding: 1rem 0;
+    font-size: 1.72em;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.flex-row .field {
+    flex: 1 1 auto;
+}
