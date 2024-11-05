@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 20px/1.5 "PT Sans", sans-serif;
+}
+
+body {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "PT Serif", serif;
+}
+
+.wide-container {
+    padding: 1em max(calc((100vw - 1800px)/2), 2em);
+}
+
+.container {
+    padding: 2em max(calc((100vw - 1480px)/2), 2em);
+}
+
+.image-background {
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 13em;
+}
+
+.wrapper-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 95px;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/logo.webp');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -100vw;
+
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.main-nav ul li {
+    list-style: none outside;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header-text h1 {
+    font-size: 3.5em;
+    line-height: 1.3;
+    padding-bottom: 1.2rem;
+    color: #fff;
+}
+
+.header-text p {
+    font-size: 1.25em;
+    width: 800px;
+    color: #fff;
+}
+
+.company-blog {
+    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+}
+
+.wrapper-flex-row {
+    margin: 4em 0;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.wrapper-flex-row article {
+    flex: 0 1 700px;
+}
+
+.wrapper-flex-row article h3 {
+    font-size: 2.95em;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+}
+
+.wrapper-flex-row article p {
+    opacity: 0.8;
+}
+
+.wrapper-flex-row .btn {
+    margin-top: 2em;
+    width: fit-content;
+    border: 3px solid #B0825C;
+}
+
+.wrapper-flex-row .btn a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    color: #B0825C;
+    font-weight: 600;
+}
+
+.company-sponsors {
+    background-color: #fff;
+}
+
+.wrapper-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.wrapper-flex-column .media {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.media .image img {
+    display: block;
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1/1;
+    padding: 1.2em;
+    background-color: #DDDDDD;
+    border-radius: 5em;
+}
+
+.wrapper-flex-column article {
+    text-align: center;
+}
+
+.wrapper-flex-column article h3 {
+    font-size: 2.95em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    color: #B0825C;
+}
+
+.wrapper-flex-column article p {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.wrapper-links section h4 {
+    font-size: 1.25em;
+    padding-bottom: 2em;
+    font-weight: 400;
+}
+
+.wrapper-links section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.wrapper-links section li {
+    list-style: none outside;
+}
+
+.wrapper-links section li a {
+    display: block;
+    text-decoration: none;
+    color: #A4A69B;
+    text-transform: uppercase;
+
+}
+
+.wrapper-copywrite {
+    padding-left: 5em;
+    color: #A4A69B;
+    border-top: 1px solid #3A3A41;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+}

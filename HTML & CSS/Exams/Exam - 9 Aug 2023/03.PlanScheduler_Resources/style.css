@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 15px/1.5 Inter, sans-serif;
+}
+
+body,
+input,
+textarea {
+    font: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 2em max(calc((100vw - 1760px) /2), 2em);
+}
+
+/* Header */
+
+.site-header {
+    background-color: #D9D9D9;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .main-nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+.site-header .main-nav li {
+    list-style: none outside;
+}
+
+.site-header .main-nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.33em;
+    color: #000;
+}
+
+.site-header .buy-button {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+}
+
+.site-header .buy-button a {
+    display: block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main */
+
+
+.site-main .image-background {
+    padding: 0;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center -22em;
+    background-repeat: no-repeat;
+}
+
+.image-background .wrapper {
+    max-width: 750px;
+    margin: 10em 0 6em 16em;
+
+}
+
+.image-background h1 {
+    font-size: 4em;
+    line-height: 1.1;
+    padding-bottom: 1.5em;
+}
+
+.image-background p {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.image-background .get-button {
+    margin-top: 4em;
+    width: fit-content;
+    background-color: #000;
+}
+
+.image-background .get-button a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2.5em;
+
+}
+
+.site-main .additional-info {
+    padding-top: 3em;
+    background-color: #fff;
+}
+
+.additional-info .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.additional-info .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .number {
+    padding-bottom: 0.5em;
+    color: #FF7C4C;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.box .type {
+    padding-bottom: 0.5em;
+    font-size: 1.46em;
+}
+
+.box .info {
+    opacity: 0.6;
+}
+
+.site-main .post-articles {
+    background-color: #D9D9D9;
+    padding: 2em 0;
+}
+
+.site-main .post-articles .container {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.post-articles .container article {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+
+article .media {
+    flex: 0 0 630px;
+}
+
+article .content {
+    flex: 0 1 1050px;
+}
+
+article .content h5 {
+    font-size: 1.33em;
+    opacity: 0.7;
+
+}
+
+article .content h3 {
+    font-size: 2.67em;
+    padding: 1em 0;
+
+}
+
+article .content p {
+    font-size: 1.33em;
+    opacity: 0.7;
+}
+
+article .content a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.33em;
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+
+article .content .author {
+    padding: 2em 0 1em 0;
+}
+
+.site-main .plans-price {
+    background-color: #F5F5F5;
+}
+
+.site-main .plans-price .container {
+    max-width: 1750px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.plans-price .container {
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.plans-price .plans-info {
+    padding-top: 2em;
+    flex: 0 1 540px;
+}
+
+.plans-info h3 {
+    font-size: 2.67em;
+    padding-bottom: 1em;
+}
+
+.plans-info p {
+    font-size: 1.33em;
+}
+
+.plans-price .plan {
+    padding: 2em 0;
+    flex: 0 1 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.plans-price .plan.option1 {
+    background-color: #FF7C4C;
+}
+
+.plans-price .plan.option2 {
+    background-color: #000;
+    color: #fff;
+}
+
+.plans-price .plan h4 {
+    font-size: 2em;
+}
+
+.plans-price .plan p {
+    font-size: 1.33em;
+}
+
+.plans-price .plan .price {
+    font-size: 5.33em;
+    font-weight: 200;
+}
+
+.plans-price .plan .more-button {
+    border-radius: 0.3em;
+    margin-top: 3em;
+}
+
+.plans-price .plan .more-button a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.13em;
+    padding: 1em 2em;
+}
+
+.plan.plan.option1 .more-button {
+    background-color: #000;
+}
+
+.plan.plan.option1 .more-button a {
+    color: #fff;
+}
+
+.plan.plan.option2 .more-button {
+    background-color: #fff;
+}
+
+.plan.plan.option2 .more-button a {
+    color: #000;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #D9D9D9;
+    padding: 2em 0;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-footer .container i {
+    font-size: 2em;
+}

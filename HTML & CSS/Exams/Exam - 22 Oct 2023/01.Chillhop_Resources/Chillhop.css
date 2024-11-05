@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font: inherit;
+}
+
+.wrapper {
+    max-width: 875px;
+    border: 1px solid #000;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.card-container {
+    border: 3px solid #000;
+    border-radius: 0.5em;
+    padding: 2em;
+    background-color: #1881B6;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.text-content h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.text-content h1 {
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.text-content p {
+    font-size: 0.9em;
+    font-weight: 500;
+    text-indent: 3.3em;
+    line-height: 1.9;
+    padding-bottom: 2em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+}
+
+.buttons .current {
+    background-color: #B6416D;
+    color: #fff;
+}

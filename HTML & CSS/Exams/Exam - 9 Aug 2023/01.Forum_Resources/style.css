@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 23px/1.3 Inter;
+}
+
+body,
+textarea,
+button,
+blockquote {
+    font: inherit;
+}
+
+body {
+    padding: 2em 5em;
+
+    background-image: url('images/background.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 2em;
+}
+
+.post {
+    background-color: #fff;
+    padding: 3em;
+}
+
+.post-text {
+    color: #595959;
+}
+
+.author {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+
+/* Main */
+
+.main-posts {
+    flex: 1 1 1060px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main-posts .post {
+    display: flex;
+    gap: 1em;
+    align-items: flex-end;
+}
+
+.main-posts .post .post-content i {
+    font-size: 80px;
+}
+
+.main-posts .post-text {
+    padding: 1em 0;
+}
+
+.main-posts .post .author-img {
+    flex: 0 0 30%;
+    width: 240px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 9em;
+}
+
+.main-posts .post .author-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Aside */
+
+.aside-posts {
+    flex: 1 1 530px;
+
+}
+
+
+.aside-posts .post {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em 0.5em 2em;
+}
+
+.aside-posts .post-content i {
+    font-size: 120px;
+}
+
+.aside-posts .post-text {
+    padding-top: 3.9em;
+    padding-bottom: 7.5em;
+}
+
+.author-info {
+    border-top: 1px solid #ccc;
+    padding: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.author-info .media {
+    width: 120px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 9em;
+}
+
+.author-info .media img {
+    display: block;
+    width: 95%;
+    height: auto;
+}
