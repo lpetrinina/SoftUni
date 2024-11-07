@@ -35,4 +35,17 @@ export class ArticleComponent {
         }
     }
 
+
+    toggleImage(): void {
+        this.imageIsShown = !this.imageIsShown;
+        this.imageButtonTitle = this.imageButtonTitle === 'Show Image' ? 'Hide Image' : 'Show Image';
+    }
+
+    hideDesc(): void {
+        this.descToShow = '';
+        this.articleDescLen = 0;
+        this.showHideBtn = false;
+        this.showReadMoreBtn = true;
+    }
+
 }
