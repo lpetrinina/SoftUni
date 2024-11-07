@@ -22,6 +22,8 @@ export class ArticleComponent {
     constructor() {
         this.articleDescLen = 0;
         this.descToShow = '';
+        this.article = new Article("", "", "", ""); // 
+        this.articleDesc = "";
     }
 
     readMore(): void {
