@@ -137,7 +137,6 @@ body {
 }
 
 
-
 h2 {
     text-align: center;
     border-bottom: 1px dashed #999;
@@ -154,4 +153,24 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+/* Media Query */
+
+@media (min-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 18px;
+    }
 }
