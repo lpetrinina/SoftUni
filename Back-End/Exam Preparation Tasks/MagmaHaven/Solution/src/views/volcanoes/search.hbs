@@ -1,0 +1,48 @@
+{{setTitle 'Magma Haven | Search'}}
+
+<section class="volcano-search">
+    <h1>Search</h1>
+
+    <form class="search-form" method="GET">
+        <input type="text" class="search-volcano" name="volcanoName" placeholder="Search by Name...">
+        <select id="type" name="volcanoType">
+            <option value="Supervolcanoes">Supervolcanoes</option>
+            <option value="Submarine">Submarine</option>
+            <option value="Subglacial">Subglacial</option>
+            <option value="Mud">Mud</option>
+            <option value="Stratovolcanoes">Stratovolcanoes</option>
+            <option value="Shield">Shield</option>
+        </select>
+        <button type="submit" class="btn-search">Search</button>
+    </form>
+
+    {{#if volcanoes}}
+
+    <div class="search-result">
+
+        <div class="search-list">
+            {{#each volcanoes}}
+            <div class="volcano">
+                <div class="volcano-img">
+                    <img src="{{this.image}}">
+                </div>
+                <div class="volcano-info">
+                    <h1>{{this.name}}</h1>
+                    <p><span>Location: </span>{{this.location}}</p>
+                    <p><span>Volcano Type: </span>{{this.typeVolcano}}</p>
+                </div>
+
+                <a href="/volcanoes/{{this._id}}/details" class="btn-details">Details</a>
+            </div>
+            {{/each}}
+        </div>
+
+    </div>
+
+    {{else}}
+
+    <div class="no-match">
+        <p>No match was found!</p>
+    </div>
+    {{/if}}
+</section>

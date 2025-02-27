@@ -1,0 +1,50 @@
+{{setTitle 'GlowAlchemy | Details'}}
+
+<article class="product-detail">
+
+    <img src="{{product.image}}">
+    <h2>{{product.name}}</h2>
+    <p>{{product.description}}</p>
+
+    <h3>|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|</h3>
+
+    <h3>Key Ingredients:</h3>
+    {{!-- <p>Hyaluronic Acid / Vitamic C / Aloe Vera Extract</p> --}}
+    <p>{{product.ingredients}}</p>
+
+    <h3>|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|</h3>
+
+    <h3>Benefits:</h3>
+    <p>{{product.benefits}}</p>
+
+    <h3>|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|</h3>
+
+    <h3>Skin Type:</h3>
+    <p>{{product.skin}}</p>
+
+    <h3>|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|</h3>
+
+    <h3>Price: ${{product.price}}</h3>
+
+    <h3>|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|</h3>
+
+    <h3>People Who Recommend: {{product.recommendList.length}}</h3>
+</article>
+
+{{#if user}}
+<div class="command">
+    {{#if isOwner}}
+    <a href="/products/{{product._id}}/edit">Edit</a>
+    <a href="/products/{{product._id}}/delete">Delete</a>
+
+    {{else}}
+
+    {{#if isRecommend}}
+    <p>You've already recommended this product!</p>
+    {{else}}
+    <a href="/products/{{product._id}}/recommend">Recommend</a>
+    {{/if}}
+
+    {{/if}}
+</div>
+{{/if}}

@@ -1,0 +1,28 @@
+{{setTitle 'GlowAlchemy | Search'}}
+
+<section class="search-container">
+    <h2>Search Products</h2>
+
+    <form method="GET">
+        <input type="text" id="search" name="productName" placeholder="Search for products...">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="search-results">
+
+        {{#if products}}
+
+        {{#each products}}
+        <article class="product">
+            <img src="{{this.image}}">
+            <h3>{{this.description}}</h3>
+            <p>Suitable for: {{this.skin}}</p>
+            <a href="/products/{{this._id}}/details">Read More</a>
+        </article>
+        {{/each}}
+
+        {{else}}
+        <p class="no-match">There are no products found yet!</p>
+        {{/if}}
+    </div>
+</section>

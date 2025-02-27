@@ -1,0 +1,23 @@
+{{setTitle 'GlowAlchemy | Home'}}
+
+<section class="featured-product">
+    <h2>Your destination for luxurious, skin-loving cosmetics crafted with care</h2>
+    <h2>Discover Our Collection</h2>
+
+    <div class="products">
+        {{#if products}}
+
+        {{#each products}}
+        <article class="product">
+            <img src="{{this.image}}">
+            <h3>{{this.name}}</h3>
+            <p>Suitable for: {{this.skin}}</p>
+            <a href="/products/{{this.id}}/details">Read More</a>
+        </article>
+        {{/each}}
+
+        {{else}}
+        <p class="no-post">There are no products found yet!</p>
+        {{/if}}
+    </div>
+</section>
